@@ -40,3 +40,7 @@ body {
 .project-c {
   transform: translateY(50px);
 }
+
+.nav-bar {
+  padding-top: 15px;
+}

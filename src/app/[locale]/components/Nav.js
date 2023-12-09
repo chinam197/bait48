@@ -1,5 +1,5 @@
 import Network from "./networkSociety/Network";
-import Home from "./home/Home";
+import Home from "./Home";
 import { useTranslations } from "next-intl";
 const Nav = () => {
   const t = useTranslations("Info");

@@ -1,10 +1,11 @@
 import { useTranslations } from "next-intl";
 
-export default function Index() {
-  const t = useTranslations("Info");
+export default function Project() {
+  const info = useTranslations("Info");
+  const skills = useTranslations("Skills");
   return (
     <div className="row project-c">
-      <h1 className="text-center name-m">{t("name")}</h1>
+      <h1 className="text-center name-m">{info("name")}</h1>
       <div className="col-4">
         <div className="d-flex flex-column">
           <hr />
@@ -13,20 +14,17 @@ export default function Index() {
             alt="nobita"
           />
           <hr />
-          <span className="text-center">nobita</span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-            iure!
-          </p>
+          <span className="text-center">Front-end developer</span>
+          <h2>{skills("title")}</h2>
           <hr />
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-            repellat explicabo commodi! At, quisquam nam ex natus velit ad
-            aperiam?
+            <strong>{skills("skill-1")}</strong>
+            REST API, React.js, Next.js, Redux, Context, CSS3, HTML5, UI/UX,
+            Figma, Photoshop...
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            error harum doloremque vitae tenetur?
+            <strong>{skills("other-title")}</strong>
+            {skills("other")}
           </p>
         </div>
       </div>

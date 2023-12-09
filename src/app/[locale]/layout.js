@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Provides from "./Providers";
-import Nav from "./Nav";
+import Nav from "./components/Nav";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 export const metadata = {
