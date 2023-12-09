@@ -5,6 +5,7 @@ export default function Project() {
   const skills = useTranslations("Skills");
   const intro = useTranslations("Intro");
   const project = useTranslations("Project");
+  const lorem = useTranslations("Lorem");
   return (
     <div className="row project-c">
       <h1 className="text-center name-m">{info("name")}</h1>
@@ -52,6 +53,18 @@ export default function Project() {
         <hr />
         <div className="project-p">
           <h3>{project("title")}</h3>
+          <div>
+            <p>{lorem("content")}</p>
+            <p>{lorem("content")}</p>
+            <p>{lorem("content")}</p>
+            <p>{lorem("content")}</p>
+            <p>{lorem("content")}</p>
+            <p>{lorem("content")}</p>
+            <p>{lorem("content")}</p>
+            <p>{lorem("content")}</p>
+            <p>{lorem("content")}</p>
+            <p>{lorem("content")}</p>
+          </div>
         </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ body {
   background-color: #fff;
   transition-property: background-color;
   transition: 0.2s linear;
+  padding: 10px;
 }
 
 [data-theme="dark"] body {
@@ -45,6 +46,13 @@ a {
 
 .project-c {
   transform: translateY(50px);
+}
+
+.project-p>div {
+  box-shadow: 0 0 1px;
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .nav-bar {
