@@ -3,15 +3,20 @@ import Provides from "./Providers";
 import Nav from "./components/Nav";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useTranslations } from "next-intl";
+let title;
+
 export const metadata = {
-  title: "Nam yasua",
-  description: "bài này mãi mới làm được",
+  title: "Nam/Portfolio",
+  description: "Nam Portfolio",
 };
-// Can be imported from a shared config
+
 const locales = ["vi", "en"];
 
 export default function LocaleLayout({ children, params: { locale } }) {
-  // Validate that the incoming `locale` parameter is valid
+  const meta = useTranslations("Info");
+  title = meta("title");
+
   if (!locales.includes(locale)) notFound();
 
   return (
