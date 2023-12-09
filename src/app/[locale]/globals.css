@@ -1,0 +1,42 @@
+* {
+
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+[data-theme="dark"] body {
+  background-color: #000;
+  color: red;
+}
+
+.img-home {
+  max-width: 40px;
+  border-radius: 99px;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.nav-bar {
+  top: 0;
+  left: 0;
+  right: 0;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.project-c {
+  transform: translateY(50px);
+}
