@@ -8,6 +8,8 @@
 body {
   color: #000;
   background-color: #fff;
+  transition-property: background-color;
+  transition: 0.2s linear;
 }
 
 [data-theme="dark"] body {
