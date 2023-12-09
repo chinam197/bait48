@@ -37,6 +37,10 @@ body {
   z-index: 10;
 }
 
+a {
+  text-decoration: none;
+}
+
 .project-c {
   transform: translateY(50px);
 }

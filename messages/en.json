@@ -15,5 +15,11 @@
     "Histories": {
         "Histories-title": "Histories",
         "at-2016": "FPT Junior high school"
+    },
+    "Intro": {
+        "Contact": "Contact"
+    },
+    "Project": {
+        "title": "Self project"
     }
 }

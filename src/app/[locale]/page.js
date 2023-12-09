@@ -3,6 +3,8 @@ import { useTranslations } from "next-intl";
 export default function Project() {
   const info = useTranslations("Info");
   const skills = useTranslations("Skills");
+  const intro = useTranslations("Intro");
+  const project = useTranslations("Project");
   return (
     <div className="row project-c">
       <h1 className="text-center name-m">{info("name")}</h1>
@@ -30,7 +32,7 @@ export default function Project() {
       </div>
       <div className="col-8">
         <hr />
-        <h2 className="text-center">Thông tin liên hệ</h2>
+        <h2 className="text-center">{intro("Contact")}</h2>
         <p>
           Phone:
           <a href="#">113</a>
@@ -49,7 +51,7 @@ export default function Project() {
         </p>
         <hr />
         <div className="project-p">
-          <h3>Các dự án cá nhân</h3>
+          <h3>{project("title")}</h3>
         </div>
       </div>
     </div>
